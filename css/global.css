@@ -1,0 +1,102 @@
+@charset "utf-8";
+body,p,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,fieldset,legend,input,option,textarea,td,blockquote,pre,hr,button,menu{ margin:0;padding:0;}
+button,input,select,textarea{ font:12px/1.5 "微软雅黑";}
+table{ border-collapse:collapse; border-spacing:0;}
+input,img{ border:0;}
+abbr,acronym{ border:0; font-variant:normal;}
+ol,ul{ list-style:none;}
+h1,h2,h3,h4,h5,h6{ font-size:12px;}
+a{ text-decoration:none; color:#555a5e; outline-style:none;}
+a:hover{ text-decoration:underline;}
+.clearfix:after{ content:"."; clear:both; display:block; height:0; visibility:hidden; overflow:hidden; line-height:0;}
+.clearfix{ zoom:1;}
+.clear{ clear:both; height:0px; line-height:0px; font-size:0px;}
+
+.fl{ float:left;}
+.fr{ float:right;}
+
+.dn{ display:none;}
+.db{ display:block;}
+.di{ display:inline;}
+.dib{ display:inline-block;}
+
+.vh{ visibility:hidden;}
+.vc{ visibility:collapse;}
+.vv{ visibility:visible;}
+
+.oh{ overflow:hidden;}
+.os{ overflow:scroll;}
+.oa{ overflow:auto}
+
+.ap{ position:relative;}
+.ap5{ position:relative; z-index:5;}
+.ap10{ position:relative; z-index:10;}
+.ab{ position:absolute;}
+.ab5{ position:absolute; z-index:5;}
+.ab10{ position:absolute; z-index:10;}
+
+.tc{ text-align:center;}
+.tl{ text-align:left;}
+.tr{ text-align:right;}
+
+.vt{ vertical-align:top;}
+.vm{ vertical-align:middle;}
+.vb{ vertical-align:bottom;}
+
+.f10{ font-size:10px;}
+.f11{ font-size:11px;}
+.f12{ font-size:12px;}
+.f14{ font-size:14px;}
+.f15{ font-size:15px;}
+.f16{ font-size:16px;}
+.f18{ font-size:18px;}
+.f20{ font-size:20px;}
+
+.em1{ text-indent:1em;}
+.em2{ text-indent:2em;}
+
+.bold{ font-weight:bold;}
+.normal{ font-weight:normal;}
+
+.lineH22{ line-height:22px;}
+.lineH180{ line-height:180%;}
+.lineH190{ line-height:190%;}
+.lineH200{ line-height:200%;}
+
+.mar0{ margin:0 !important;}
+.mar10{ margin:10px;}
+.marA{ margin:0 auto;}
+.marL10{ margin-left:10px;}
+.marL5{ margin-left:5px;}
+.marR10{ margin-right:10px;}
+.marR20{ margin-right:20px;}
+.marR30{ margin-right:30px;}
+.marB10{ margin-bottom:10px;}
+.marB9{ margin-bottom:9px;}
+.marT10{ margin-top:10px;}
+.pad0{ padding:0 !important;}
+.pad10{ padding:10px;}
+.padL10{ padding-left:10px}
+.padR10{ padding-right:10px;}
+.padB10{ padding-bottom:10px;}
+.padT10{ padding-top:10px;}
+
+.color-black{ color:#000000;}
+.color-white{ color:#ffffff;}
+
+.bgfff{ background-color:#ffffff;}
+
+.tdu{ text-decoration:underline;}
+
+.pointer{ cursor:pointer;}
+
+.space-05{ height:5px; overflow:hidden;}
+.space-10{ height:10px; overflow:hidden;}
+.space-20{ height:20px; overflow:hidden;}
+.space-30{ height:30px; overflow:hidden;}
+
+.width100{ width:100%;}
+.width1280{ width:1280px;}
+
+body{ color:#555a5e; font:12px/1.5 "微软雅黑"; background-color:#ffffff;}
+

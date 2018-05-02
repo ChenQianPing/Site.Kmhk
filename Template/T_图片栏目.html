@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<stl:include file="@/include/title.html"></stl:include>
+</head>
+
+<body>
+
+<stl:include file="@/include/head.html"></stl:include>
+<div id="banner2">
+  <!--<a href="#" class="db width1002 marA"></a>-->
+  </div><!--banner2 end-->
+<div id="container2" class="width1280 marA clearfix">
+    <stl:include file="@/include/left.html"></stl:include><!--leftPart end-->
+    <div id="rightPart" class="fr oh">
+    <div></div>
+        <h2 class="f16 color-black"><stl:channel></stl:channel></h2>
+        
+        <!--rightTop end-->
+          
+       
+<div class="about_con">
+  <table width="680" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td height="300" valign="top"><div>
+          <ul class="about_pro">
+            <stl:pageContents pageNum="6" columns="3">
+            <li><stl:a title="{Content.Title}"><stl:image height="135" width="180" title="{Content.Title}" alt="{Content.Title}"></stl:image>
+                  <p><stl:content type="Title"></stl:content></p>
+            </stl:a></li>
+              </stl:pageContents>
+          </ul>
+      </div></td>
+    </tr>
+    <tr>
+      <td valign="top"><stl:pageItems autoHide="false">
+        <table cellpadding="0" width="90%" cellspacing="0" height="40" align="center">
+          <tr>
+            <td align="left"><stl:pageItem type="FirstPage" text="首页"></stl:pageItem>&nbsp;|&nbsp;<stl:pageItem type="PreviousPage" text="上一页"></stl:pageItem>&nbsp;|&nbsp;<stl:pageItem type="NextPage" text="下一页"></stl:pageItem>&nbsp;|&nbsp;<stl:pageItem type="LastPage" text="末页"></stl:pageItem></td>
+            <td align="right"><stl:pageItem type="CurrentPageIndex" text="当前页："></stl:pageItem>/<stl:pageItem type="TotalPageNum"></stl:pageItem>&nbsp;&nbsp;&nbsp;<stl:pageItem type="PageSelect"></stl:pageItem></td>
+          </tr>
+        </table>
+      </stl:pageItems></td>
+    </tr>
+  </table>
+</div>
+<!--newsList end-->
+       
+      
+                
+    </div><!--rightPart end-->    
+</div>
+
+<!--container end-->
+
+<stl:include file="@/include/foot.html"></stl:include>
+</body>
+</html>
+ 

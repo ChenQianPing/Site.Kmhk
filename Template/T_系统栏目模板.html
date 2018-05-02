@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<stl:include file="@/include/title.html"></stl:include>
+</head>
+
+<body>
+
+<stl:include file="@/include/head.html"></stl:include>
+<div id="banner2">
+  <!--<a href="#" class="db width1002 marA"></a>-->
+  </div><!--banner2 end-->
+<div id="container2" class="width1280 marA clearfix">
+    <stl:include file="@/include/left.html"></stl:include><!--leftPart end-->
+    <div id="rightPart" class="fr oh">
+    <div></div>
+        <h2 class="f16 color-black"><stl:channel></stl:channel></h2>
+        <stl:if testType="CountOfImageContents" testOperate="GreatThan" testValue="0" >
+  <stl:successTemplate>
+        <dl class="oh rightTop">
+        <stl:contents totalNum="1" isImage="true" >
+          <dt class="fr"><stl:a class="f14 color-black"><stl:content type="Title"></stl:content></stl:a></dt>
+            <dd class="fl pic"><stl:a><stl:content type="ImageUrl" width="239" height="174" /></stl:a></dd>
+            <dd class="fr text"><stl:a><stl:content type="Content" wordNum="60" isClearTags="true"></stl:content></stl:a></dd>
+            </stl:contents>
+        </dl>
+        </stl:successTemplate>
+        <stl:failureTemplate>
+        </stl:failureTemplate>
+        </stl:if>
+        <!--rightTop end-->
+          
+        <ul class="newsList">
+        <stl:pageContents pageNum="10">
+          <li class="oh">
+            <p class="fl"><stl:a><stl:content type="Title"></stl:content></stl:a></p>
+            <span class="fr date"><stl:content type="AddDate" formatString="yyyy-MM-dd"></stl:content></span></li>
+            </stl:pageContents>
+           
+        </ul><!--newsList end-->
+       
+      <div class="oh page">
+      <stl:pageItems>
+      <!--<stl:pageItem type="TotalNum">
+          <span class="fl marR10 total">共68条数据</span>
+            </stl:pageItem>-->
+            <stl:pageItem type="PreviousPage">
+            <stl:successTemplate>
+            <span class="fl pointer ">上一页</span>
+            </stl:successTemplate>
+            <stl:failureTemplate>
+            <span class="fl pointer last">上一页</span>
+            </stl:failureTemplate>
+            </stl:pageItem>
+            <stl:pageItem type="PageNavigation">
+            <stl:successTemplate>
+            <stl:a href="{Current.Url}" class="fl tc ">{Current.Num}</stl:a>
+            </stl:successTemplate>
+            <stl:failureTemplate>
+            <stl:a href="{Current.Url}" class="fl tc on">{Current.Num}</stl:a>
+            </stl:failureTemplate>
+            </stl:pageItem>
+            <stl:pageItem type="nextpage">
+            <stl:successTemplate>
+            <span class="fl pointer">下一页</span>
+            </stl:successTemplate>
+            <stl:failureTemplate>
+            <span class="fl pointer next">下一页</span>
+            </stl:failureTemplate>
+            </stl:pageItem>
+            </stl:pageItems>
+           <!-- <a href="javascript:;" class="fl tc">3</a>
+            <a href="javascript:;" class="fl tc">4</a>
+            <a href="javascript:;" class="fl tc">5</a>
+            <a href="javascript:;" class="fl tc">6</a>
+            <span class="fl pointer next">下一页</span>-->
+        </div><!--page end-->
+        
+                
+    </div><!--rightPart end-->    
+</div>
+
+<!--container end-->
+
+<stl:include file="@/include/foot.html"></stl:include>
+</body>
+</html>

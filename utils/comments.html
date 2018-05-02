@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>评论</title>
+<style>
+*{font-size:12px}
+</style>
+<script>var $pageInfo = { publishmentSystemID : 1, channelID : 1, contentID : 0, siteUrl : "", homeUrl : "/center", currentUrl : "http://localhost/utils/comments.html", rootUrl : "http://localhost", apiUrl : "http://localhost" }</script>
+</head>
+
+<body>
+
+
+<script type="text/html" class="commentController">
+    <div class="comment_box">
+
+
+<%for(i = 0; i < comments.length; i ++) {
+    item = comments[i]; %>
+    
+  <div class="ly_item clearfix">
+      <%if (item.isRecommend){%>
+        <div class="wonderful"></div>
+      <%}%>
+      <div class="fl user_img">
+        <img src="<%=item.avatarUrl%>">
+      </img></div>
+      <div class="fl user_content">
+          <div class="name">
+              <span><%=item.userName%></span>
+              •
+              <%=item.addDate%>
+          </div>
+          <div class="text">
+              <p>
+                <%==item.content%>
+              </p>
+          </div>
+          <div class="zan_box">
+              <a href="javascript:;" class="icon2" onclick="commentController.good(this, <%=item.commentID%>);return false;"><i class="fa fa-thumbs-down"></i>
+              <span><%=item.good%></span>
+              </a>
+              <a href="javascript:;" class="icon3" onclick="commentController.reference(<%=item.commentID%>);return false;"><i class="fa fa-reply"></i>
+              <%=item.floor%> 楼
+              </a>
+          </div>
+      </div>
+  </div>
+
+<%}%>
+
+
+
+  <!-- <div class="page_box">
+      <span class="page_inner clearfix">
+          <a href="" >< 上一页</a>
+          <a href="" class="on">下一页 ></a>
+          <span>共100页</span>
+      </span>
+  </div> -->
+</div>
+</script>
+
+
+<br />
+
+
+<script type="text/html" class="commentController">
+    <div class="comment_box">
+  <div class="comment_title">
+      文章评论（<%=totalNum%>）
+  </div>
+    <textarea class="comment_textarea" onclick="if (isLoginFirst())userController.loginFirst();" placeholder="你怎么看？"></textarea>
+    <div class="submit_box clearfix">
+        
+        
+<% if (isAnonymous) { %>
+    
+                <div class="fl comment_avator">
+                    <a href="javascript:;" class="login_link" onclick="userController.login();return false;">登录</a> 后参与讨论
+                </div>
+            
+<% }else{ %>
+    
+                <div class="fl comment_avator">
+                    <span><img class="avator_img" src="<%=user.avatarSmall%>"><%=user.displayName%></img></span>
+                </div>
+            
+<% } %>
+
+
+        <button type="submit" class="fr comment_btn" onclick="commentController.submitComment();return false;">提交评论</button>
+    </div>
+</div>
+</script>
+<script>function isLoginFirst(){return true;}</script>
+
+
+</body>
+</html>
+<link href="/sitefiles/services/platform/components/lib/toastr/toastr.min.css" rel="stylesheet" type="text/css" />
+<script>!window.jQuery&&document.write('<script src="/sitefiles/services/platform/components/lib/jquery-1.11.0.min.js" language="javascript"></'+'script>');</script>
+<script src="/sitefiles/services/platform/components/lib/json2.js" language="javascript"></script>
+<script src="/sitefiles/services/platform/components/lib/toastr/toastr.min.js" language="javascript"></script>
+<script src="/sitefiles/services/platform/components/lib/artTemplate/template.js" language="javascript"></script>
+<script src="/sitefiles/services/platform/components/lib/layer/layer.min.js" language="javascript"></script>
+<link href="/sitefiles/services/platform/components/lib/iCheck/flat/red.css" rel="stylesheet" type="text/css" />
+<script src="/sitefiles/services/platform/components/lib/iCheck/icheck.min.js" language="javascript"></script>
+
+<script src="/sitefiles/services/platform/components/js/services/notifyService.js" language="javascript"></script>
+<script src="/sitefiles/services/platform/components/js/services/utilService.js" language="javascript"></script>
+<script src="/sitefiles/services/platform/components/js/services/userService.js" language="javascript"></script>
+
+<script src="/sitefiles/services/platform/components/js/controllers/userController.js" language="javascript"></script>
+
+<script src="/sitefiles/services/cms/components/js/services/commentService.js" language="javascript"></script>
+<script src="/sitefiles/services/cms/components/js/controllers/commentController.js" language="javascript"></script>
+<link href="/sitefiles/services/cms/components/comment/style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" language="javascript">document.ondblclick=function(x){location.href = '/sitefiles/services/cms/utils.aspx?type=StlTrigger&publishmentSystemID=1&channelID=1&fileTemplateID=5&isRedirect=true';}</script>

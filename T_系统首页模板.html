@@ -1,0 +1,88 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<stl:include file="@/include/title.html"></stl:include>
+</head>
+
+<body>
+<stl:include file="@/include/head.html"></stl:include>
+    
+<div id="banner_box" class="width100 oh ap">
+  <ul class="width100 banner_pic">
+    <li class="fl width100" style="background:url(images/banner1.jpg) no-repeat center top;">
+     <!-- <a href="#" class="db width1280 marA"></a>-->
+    </li>
+  </ul>
+</div>
+<div class="ab threeSectionTitle">
+      <div class="marA oh threeSectionTitle1">
+      <stl:channels topLevel="0" startNum="3" totalNum="1">
+      
+         <stl:a> <stl:channel type="Title"></stl:channel></stl:a>
+          <span><stl:a><img src="{Stl.SiteUrl}/images/more.png" width="29" height="6" /></stl:a></span>
+          </stl:channels>
+          </div>
+          
+        <div class="marA oh threeSectionTitle2">
+        <stl:channels topLevel="0" startNum="5" totalNum="1">
+        <stl:channel  type="Title"></stl:channel>
+          <span><stl:a ><img src="{Stl.SiteUrl}/images/more.png" width="29" height="6" /></stl:a></span></stl:channels></div>
+  <div class="marA oh threeSectionTitle3">关注我们
+          <span><!--<stl:a channelIndex="ywly"><img src="{Stl.SiteUrl}/images/more.png" width="29" height="6" /></stl:a>--></span></div>
+    </div>  
+</div>
+
+    <div id="threeSection" class="width1280 marA">
+    <div id="case">
+    <div id="caseLeft"><a href="javascript:;"><img src="images/aa1.png" width="12" height="23" /></a></div>
+    
+    
+    <div id="caseMiddle">
+  <stl:channels topLevel="0" startNum="3" totalNum="1">
+  
+    <!--  <stl:contents isImage="true" totalNum="2" scope="All">-->
+  <stl:contents   isImage="true" scope="All">
+    <div class="caseContent">
+       <div class="caseMiddlePic" >
+       <stl:a class="db"><stl:content type="ImageUrl"></stl:content></stl:a></div>
+       <div class="caseMiddlePicTitle">
+       <stl:a><stl:content type="Title" wordNum="10"></stl:content></stl:a></div>
+     </div>
+     </stl:contents>
+  </stl:channels>
+    </div>
+    
+    <div id="caseRight"><a href="javascript:;"><img src="images/aa2.png" width="12" height="23" /></a></div>
+        </div>
+    
+     <div id="new">
+      <stl:channels topLevel="0" startNum="5" totalNum="1">
+     <stl:contents isImage="true" totalNum="1"   scope="All" >
+     <div id="newPic"><stl:a><stl:content type="ImageUrl"></stl:content></stl:a></div>
+     <div id="newTop"><h1><stl:a><stl:content type="Title" wordNum="13"></stl:content></stl:a></h1><stl:a><stl:content type="Content" wordNum="40"></stl:content></stl:a></div>
+     </stl:contents>
+     </stl:channels>
+     <div id="newList">
+     <ul class="fr list">
+     <stl:channels topLevel="0" startNum="5" totalNum="1">
+     
+     <stl:contents  order="AddDate" scope="All" totalNum="3">
+                  <li class="oh"><p class="fl"><stl:a><stl:content type="Title" wordNum="15"></stl:content></stl:a></p>
+                    <span class="fr f10 date"><stl:content type="AddDate"></stl:content></span></li>
+   </stl:contents>
+
+          </stl:channels>         
+       </ul>
+     </div>
+     </div>
+
+     <div id="business">
+     <div style="margin-left:35px;"><img src="images/guanzhu.jpg" width="170" /></div>
+     </div>
+  </div>
+    
+   <stl:include file="@/include/foot.html"></stl:include>
+</body>
+</html>

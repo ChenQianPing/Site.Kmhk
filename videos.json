@@ -1,0 +1,18 @@
+[  
+    {"videoId":"1",  
+    "name":"01 敏捷精神概述",  
+    "length":"00:24:36",  
+    "videoURL":"Scrum_01.mp4",  
+    "imageURL":"Scrum_01.png",  
+    "desc":"敏捷精神概述",  
+    "teacher":"chenqp"},  
+  
+    {"videoId":"2",  
+    "name":"02 敏捷方法",  
+    "length":"00:21:37",  
+    "videoURL":"Scrum_02.mp4",  
+    "imageURL":"Scrum_02.png",  
+    "desc":"02 敏捷方法",  
+    "teacher":"chenqp"  
+    }  
+]  
